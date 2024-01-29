@@ -1,6 +1,6 @@
 defmodule Welcomer do
   def hello do
-    :world
+    "Hello, world!"
   end
 
   def hello(who) do
@@ -9,5 +9,13 @@ defmodule Welcomer do
 
   def hello(who, message) do
     "Hello, #{who}! #{message}"
+  end
+
+  def helloAt(who, {_h, _m, _s}) do
+    "Good morning, #{who}!"
+  end
+
+  def helloAt(_who) do
+    # Implement this function
   end
 end
