@@ -1,6 +1,4 @@
 defmodule Welcomer do
-  @clock Application.compile_env(:welcomer, :clock)
-
   def hello do
     "Hello, world!"
   end
@@ -19,6 +17,5 @@ defmodule Welcomer do
 
   def helloAt(_who) do
     # Implement this function
-    {_h, _m, _s} = @clock.time()
   end
 end
