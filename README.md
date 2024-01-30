@@ -10,7 +10,7 @@
 - [ ] Install ElixirLS Dialyzer extension
 - [ ] OPTIONAL: Install Elixir Test Explorer extension
 
-## Tasks:
+# Tasks:
 
 ### Task 1: Run cli in iex
 
@@ -40,5 +40,34 @@ iex -S mix
 
 - [ ] Create a test for `greeting someone at the current system time`
 - [ ] See the test fail
-- [ ] Implement `helloAt/1`
+- [ ] Implement `helloAt/1` in `Welcomer` module
+
+  HINT: You can use the following code to get the current time:
+
+  ```
+  :calendar.local_time()
+  ```
+
 - [ ] See the test pass
+
+### Task 5: Improve the design
+
+What's wrong with the current design? How would you test that `helloAt/1` works correctly on the 3 time ranges from [Task 3](#Task3)?
+
+HINT: Use the following code to get a clock that you can control in your tests:
+
+```
+defmodule Welcomer do
+  @clock Application.compile_env(:welcomer, :clock) # this is the clock that you can control in your tests
+
+ ...
+
+  def helloAt(name) do
+    local_time = @clock.time()
+    ...
+  end
+```
+
+- [ ] Create a test for `greeting someone at the morning` using `helloAt/1`
+- [ ] Create a test for `greeting someone at the afternoon` using `helloAt/1`
+- [ ] Create a test for `greeting someone at the evening` using `helloAt/1`
