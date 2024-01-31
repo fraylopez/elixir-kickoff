@@ -1,0 +1,19 @@
+@startuml
+
+  class CLI
+  class Welcomer
+  interface Clock
+  interface Translator
+
+  class SystemClock implements Clock
+  class TestClock implements Clock
+  class HttpTranslator implements Translator
+
+
+  CLI -down-> Welcomer
+  Welcomer -down-> Clock
+  Welcomer -down-> Translator
+
+
+
+@enduml
