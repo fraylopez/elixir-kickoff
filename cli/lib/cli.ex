@@ -30,18 +30,16 @@ defmodule Cli do
     IO.puts(" 1. Greet the world")
     IO.puts(" 2. Greet someone")
     IO.puts(" 3. Greet someone with a message")
+    IO.puts(" 4. Greet someone at the current time")
 
     IO.gets("Please enter a number:")
   end
 
-  defp handle_input(input) do
-    case input do
-      "1" -> greet_world()
-      "2" -> greet_someone()
-      "3" -> greet_someone_with_message()
-      _ -> IO.puts("Invalid input!")
-    end
-  end
+  defp handle_input("1"), do: greet_world()
+  defp handle_input("2"), do: greet_someone()
+  defp handle_input("3"), do: greet_someone_with_message()
+  defp handle_input("4"), do: greet_someone_at_current_time()
+  defp handle_input(_), do: IO.puts("Invalid input!")
 
   defp greet_world do
     IO.puts(Welcomer.hello())
@@ -64,6 +62,15 @@ defmodule Cli do
       |> String.trim()
 
     Welcomer.hello(who, message)
+    |> IO.puts()
+  end
+
+  defp greet_someone_at_current_time do
+    who =
+      IO.gets("Who do you want to greet?")
+      |> String.trim()
+
+    Welcomer.helloAt(who)
     |> IO.puts()
   end
 end
