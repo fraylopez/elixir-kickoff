@@ -12,10 +12,10 @@ defmodule Welcomer do
     "Hello, #{who}! #{message}"
   end
 
-  def helloAt(_who, {_h, _m, _s}) do
+  def helloAt(_who, {h, m, s}) do
     # Implement this function
-    if _h < 12 do
-      "Good morning, #{_who}!"
+    if h < 12 do
+      "Good morning, #{_who}!, the time is #{h}:#{m}:#{s}"
     else
       "Good afternoon, #{_who}!"
     end

@@ -15,7 +15,6 @@
 ### Task 1: Run cli in iex
 
 ```
-cd cli
 iex -S mix
 
 > Cli.launch()
