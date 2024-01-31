@@ -1,0 +1,12 @@
+{
+  "configurations": [
+    {
+      "type": "mix_task",
+      "request": "launch",
+      "name": "mix run",
+      "task": "run",
+      "taskArgs": [],
+      "projectDir": "${workspaceRoot}/cli"
+    },
+  ]
+}
