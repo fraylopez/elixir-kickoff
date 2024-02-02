@@ -1,0 +1,19 @@
+@startuml stage2_before
+
+  class Welcomer
+  class NativeClock
+  Welcomer -down-> NativeClock
+
+@enduml
+@startuml stage2_after
+
+  class Welcomer
+  interface Clock
+
+  class SystemClock implements Clock
+  class TestClock implements Clock
+
+
+  Welcomer -down-> Clock
+
+@enduml
