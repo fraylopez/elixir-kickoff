@@ -10,5 +10,3 @@ HINT: Syncing is done by running `asdf install` in the root of the project (wher
 
 - [ ] Install VSCode
 - [ ] Install ElixirLS extension
-- [ ] Install ElixirLS Dialyzer extension
-- [ ] OPTIONAL: Install Elixir Test Explorer extension
