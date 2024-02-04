@@ -1,3 +1,7 @@
+# Context
+
+We have a `Welcomer` module that greets people. It has a `hello/1` function that takes a name and returns a greeting message. It also has a `helloAt/1` function that takes a name and returns the proper greeting message according to the time of the day.
+
 # Tasks:
 
 ### Run the tests
