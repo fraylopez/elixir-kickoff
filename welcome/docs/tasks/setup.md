@@ -1,4 +1,4 @@
-## Setup environment
+# Setup the environment
 
 - [ ] Install or sync Erlang
 - [ ] Install or sync Elixir

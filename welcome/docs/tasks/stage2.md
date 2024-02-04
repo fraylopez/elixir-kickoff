@@ -1,6 +1,12 @@
-### Improve the design
+# Improving the design
 
 What's wrong with the current design? How would you test that `helloAt/1` works correctly on the 3 daily time ranges from previous stage?
+
+### Tasks
+
+- [ ] Create a test for `greeting someone at the morning` using `helloAt/1`
+- [ ] Create a test for `greeting someone at the afternoon` using `helloAt/1`
+- [ ] Create a test for `greeting someone at the evening` using `helloAt/1`
 
 HINT: Use the following code to get a clock that you can control in your tests:
 
@@ -9,8 +15,7 @@ HINT: Use the following code to get a clock that you can control in your tests:
 ```elixir
 
 defmodule Welcomer do
-  @clock Application.compile_env(:welcomer, :clock) # this is the clock that you can control in your tests
-
+  @clock Application.compile_env(:welcomer, :clock) # this clock will have several implementations
  ...
 
   def helloAt(name) do
@@ -27,19 +32,14 @@ defmodule WelcomerTest do
   ...
 
   test "greeting someone at the evening" do
+    # Welcomer will use TestClock when running in test environment
     clock = TestClock.new({20, 0, 0})
-    # Welcomer is using TestClock when running in test environment
     ...
   end
 end
 ```
 
-- [ ] Create a test for `greeting someone at the morning` using `helloAt/1`
-- [ ] Create a test for `greeting someone at the afternoon` using `helloAt/1`
-- [ ] Create a test for `greeting someone at the evening` using `helloAt/1`
-
 This design before the improvements:
-
 ![before ](/docs/diagrams/out/stage2_before.png#center)
 
 And after with the improvements:
