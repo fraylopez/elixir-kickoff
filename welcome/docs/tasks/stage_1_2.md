@@ -2,9 +2,9 @@
 
 What's wrong with the current design? How would you test that `helloAt/1` works correctly on the 3 daily time ranges from previous stage?
 
-## ELIXIR FACTS: Behaviors
-
-Behaviors are a way to define a set of functions that a module must implement. They are useful to define a contract that a module must follow.
+> ### Elixir facts: Behaviors
+>
+> Behaviors are a way to define a set of functions that a module must implement. They are useful to define a contract ?> that a module must follow.
 
 ### Tasks
 
@@ -38,8 +38,7 @@ defmodule WelcomerTest do
 end
 ```
 
-- [ ] Create a `Clock` behavior with a `time/0` function
-- [ ] Create `morning/0`, `afternoon/0` and `evening/0` helper methods in TestClock to make the tests more readable
+- [ ] Create `morning/0`, `afternoon/0` and `evening/0` helper methods in `TestClock` to make the tests more readable
 - [ ] Investigate about behaviors in Elixir and how to use them to rely on abstractions
 - [ ] Review the config files in `config/` and how they set the `:clock` environment variable depending on the environment
 
