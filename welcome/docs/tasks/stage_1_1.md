@@ -6,16 +6,16 @@ We have a `Welcomer` module that greets people. It has a `hello/1` function that
 >
 > `mix` is a build tool that provides tasks for creating, compiling, and testing Elixir projects, managing its dependencies, and more.
 >
-> You can run `mix` tasks from the command line. For example, to run the tests, you can run `mix test`.
-> To get the dependencies, you can run `mix deps.get`.
-> To get a list of available tasks, you can run `mix help`.
+> - To create a new project, you can run `mix new project_name`.
+> - You can run `mix` tasks from the command line. For example, to run the tests, you can run `mix test`.
+> - To fetch the dependencies, you can run `mix deps.get`.
+> - To get a list of available tasks, you can run `mix help`.
 
 ## Tasks:
 
 ### Run the tests
 
-- [ ] Run the tests from the command line
-
+- [ ] Run the tests from the command line with `mix test`
 - [ ] OPTIONAL: Run the tests from UI extension
 
 ### Fix the failing `welcomer_test.exs` tests.
