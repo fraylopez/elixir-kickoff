@@ -15,13 +15,8 @@ HINT: Use the following code to get a clock that you can control in your tests:
 ```elixir
 
 defmodule Welcomer do
-  @clock Application.compile_env(:welcomer, :clock) # this clock will have several implementations
+  @clock Application.compile_env(:welcomer, :clock)
  ...
-
-  def helloAt(name) do
-    local_time = @clock.time()
-    ...
-  end
 ```
 
 `/appswelcomer/test/welcomer_test.exs`
@@ -38,6 +33,11 @@ defmodule WelcomerTest do
   end
 end
 ```
+
+- [ ] Create a `Clock` behavior with a `time/0` function
+- [ ] Create `morning/0`, `afternoon/0` and `evening/0` helper methods in TestClock to make the tests more readable
+- [ ] Investigate about behaviors in Elixir and how to use them to rely on abstractions
+- [ ] Review the config files in `config/` and how they set the `:clock` environment variable depending on the environment
 
 This design before the improvements:
 ![before ](/docs/diagrams/out/stage2_before.png#center)
