@@ -1,11 +1,11 @@
-@startuml stage2_before
+@startuml stage_1_2_before
 
   class Welcomer
   class NativeClock
   Welcomer -down-> NativeClock
 
 @enduml
-@startuml stage2_after
+@startuml stage_1_2_after
 
   class Welcomer
   interface Clock

@@ -2,6 +2,10 @@
 
 What's wrong with the current design? How would you test that `helloAt/1` works correctly on the 3 daily time ranges from previous stage?
 
+## ELIXIR FACTS: Behaviors
+
+Behaviors are a way to define a set of functions that a module must implement. They are useful to define a contract that a module must follow.
+
 ### Tasks
 
 - [ ] Create a test for `greeting someone at the morning` using `helloAt/1`
@@ -40,8 +44,8 @@ end
 - [ ] Review the config files in `config/` and how they set the `:clock` environment variable depending on the environment
 
 This design before the improvements:
-![before ](/docs/diagrams/out/stage2_before.png#center)
+![before ](/docs/diagrams/out/stage_1_2_before.png#center)
 
 And after with the improvements:
 
-![after ](/docs/diagrams/out/stage2_after.png#center)
+![after ](/docs/diagrams/out/stage_1_2_after.png#center)
