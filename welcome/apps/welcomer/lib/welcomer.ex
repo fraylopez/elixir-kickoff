@@ -16,7 +16,7 @@ defmodule Welcomer do
   def helloAt(who, {h, _, _}) when h >= 12 and h < 18, do: "Good afternoon, #{who}!"
   def helloAt(who, {h, _, _}) when h > 18, do: "Good evening, #{who}!"
 
-  def helloAt(_who) do
-    # Implement this function
+  def helloAt(who) do
+    helloAt(who, @clock.time())
   end
 end

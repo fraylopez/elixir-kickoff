@@ -31,4 +31,22 @@ defmodule WelcomerTest do
     who = "someone"
     assert Welcomer.helloAt(who, {19, 0, 0}) == "Good evening, #{who}!"
   end
+
+  test "greets someone in the morining with clock" do
+    who = "someone"
+    TestClock.set_time({11, 0, 0})
+    assert Welcomer.helloAt(who) == "Good morning, #{who}!"
+  end
+
+  test "greets someone in the afternoon with clock" do
+    who = "someone"
+    TestClock.set_time({13, 0, 0})
+    assert Welcomer.helloAt(who) == "Good afternoon, #{who}!"
+  end
+
+  test "greets someone in the evening with clock" do
+    who = "someone"
+    TestClock.set_time({19, 0, 0})
+    assert Welcomer.helloAt(who) == "Good evening, #{who}!"
+  end
 end
