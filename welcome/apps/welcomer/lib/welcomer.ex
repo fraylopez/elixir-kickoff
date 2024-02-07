@@ -1,5 +1,5 @@
 defmodule Welcomer do
-  # @clock Application.compile_env(:welcomer, :clock)
+  @clock Application.compile_env(:welcomer, :clock)
   def hello do
     "Hello, world!"
   end
@@ -12,9 +12,9 @@ defmodule Welcomer do
     "Hello, #{who}! #{message}"
   end
 
-  def helloAt(_who, {h, m, s}) do
-    # Implement this function
-  end
+  def helloAt(who, {h, _, _}) when h < 12, do: "Good morning, #{who}!"
+  def helloAt(who, {h, _, _}) when h >= 12 and h < 18, do: "Good afternoon, #{who}!"
+  def helloAt(who, {h, _, _}) when h > 18, do: "Good evening, #{who}!"
 
   def helloAt(_who) do
     # Implement this function
