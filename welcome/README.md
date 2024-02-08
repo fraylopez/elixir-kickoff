@@ -3,12 +3,12 @@ The project is designed in an incremental way so complexity is added in small st
 
 # Path:
 
-- [ ] [Setup](/docs/tasks/setup.md)
+- [ ] [Setup](./docs/tasks/setup.md)
 - [ ] LEVEL 1
 
-  - [ ] [Stage 1](/docs/tasks/stage_1_1.md)
-  - [ ] [Stage 2](/docs/tasks/stage_1_2.md)
+  - [ ] [Stage 1](./docs/tasks/stage_1_1.md)
+  - [ ] [Stage 2](./docs/tasks/stage_1_2.md)
 
 - [ ] LEVEL 2
-  - [ ] [Stage 1](/docs/tasks/stage_2_1.md)
-  - [ ] [Stage 2](/docs/tasks/stage_2_2.md)
+  - [ ] [Stage 1](./docs/tasks/stage_2_1.md)
+  - [ ] [Stage 2](./docs/tasks/stage_2_2.md)

@@ -1,5 +1,5 @@
 {
   "elixirTestExplorer.enable": true,
-  "plantuml.exportOutDir": "/docs/diagrams/out",
-  "plantuml.diagramsRoot": "/docs/diagrams/src",
+  "plantuml.exportOutDir": "./docs/diagrams/out",
+  "plantuml.diagramsRoot": "./docs/diagrams/src",
 }
