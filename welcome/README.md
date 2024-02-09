@@ -16,3 +16,4 @@ The project is designed in an incremental way so complexity is added in small st
 
 - [ ] LEVEL 3
   - [ ] [Stage 1](./docs/tasks/stage_3_1.md)
+  - [ ] [Stage 2](./docs/tasks/stage_3_2.md)
