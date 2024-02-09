@@ -1,3 +1,7 @@
+.DS_Store
+
+.vscode/
+
 # The directory Mix will write compiled artifacts to.
 /_build/
 
@@ -21,3 +25,4 @@ erl_crash.dump
 
 # Temporary files, for example, from tests.
 /tmp/
+
