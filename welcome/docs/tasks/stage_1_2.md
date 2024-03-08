@@ -43,8 +43,8 @@ end
 - [ ] Review the config files in `config/` and how they set the `:clock` environment variable depending on the environment
 
 This design before the improvements:
-![before ](./docs/diagrams/out/stage_1_2_before.png#center)
+![before ](../diagrams/out/stage_1_2_before.png#center)
 
 And after with the improvements:
 
-![after ](./docs/diagrams/out/stage_1_2_after.png#center)
+![after ](../diagrams/out/stage_1_2_after.png#center)
